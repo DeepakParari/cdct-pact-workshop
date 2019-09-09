@@ -37,7 +37,7 @@
                     "country": "United States",
                     "places": [
                         {
-                            "stateAbbreviation": "CA",
+                            "stateAbbreviation": "WY",
                             "state": "California",
                             "placeName": "Beverly Hills"
                         }
@@ -98,7 +98,8 @@
                         "$.places[*].stateAbbreviation": {
                             "matchers": [
                                 {
-                                    "match": "type"
+                                    "match": "regex",
+                                    "regex": "(WY|OK)"
                                 }
                             ],
                             "combine": "AND"

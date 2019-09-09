@@ -59,7 +59,7 @@ public class LocationServiceContractTest {
             .minArrayLike("places", 1, 1, place -> place
                 .stringType("placeName", "Beverly Hills")
                 .stringType("state", "California")
-                .stringType("stateAbbreviation", "CA")
+                .stringType("stateAbbreviation","CA")
             )).build();
 
         return builder.given(
